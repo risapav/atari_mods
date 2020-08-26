@@ -13,4 +13,681 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L Connector:AVR-ISP-6 J1
+U 1 1 5F416139
+P 2700 6100
+F 0 "J1" H 3000 6800 50  0000 R CNN
+F 1 "AVR-ISP-6" H 3150 6650 50  0000 R CNN
+F 2 "kicad-footprints:PinHeader_2x03_P1.27mm_Vertical" V 2450 6150 50  0001 C CNN
+F 3 " ~" H 1425 5550 50  0001 C CNN
+	1    2700 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x13_Male J3
+U 1 1 5F416C02
+P 7950 4700
+F 0 "J3" H 8058 5481 50  0000 C CNN
+F 1 "DIN13T" H 7750 5400 50  0000 C CNN
+F 2 "libs:ADADS" H 7950 4700 50  0001 C CNN
+F 3 "~" H 7950 4700 50  0001 C CNN
+	1    7950 4700
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x15_Female J4
+U 1 1 5F417B6B
+P 10600 4700
+F 0 "J4" H 10628 4726 50  0000 L CNN
+F 1 "Conn_01x15_Female" H 10050 3800 50  0000 L CNN
+F 2 "kicad-footprints:DSUB-15-HD_Female_Vertical_P2.29x1.98mm_MountingHoles" H 10600 4700 50  0001 C CNN
+F 3 "~" H 10600 4700 50  0001 C CNN
+	1    10600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Microchip_ATtiny:ATtiny85-20SU U?
+U 1 1 5F41CDA9
+P 2650 4000
+AR Path="/5F41CDA9" Ref="U?"  Part="1" 
+AR Path="/5F40DF0D/5F41CDA9" Ref="U1"  Part="1" 
+F 0 "U1" H 2300 4800 50  0000 R CNN
+F 1 "ATtiny85-20SU" H 2500 4700 50  0000 R CNN
+F 2 "kicad-footprints:SOIJ-8_5.3x5.3mm_P1.27mm" H 2650 4000 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 2650 4000 50  0001 C CNN
+	1    2650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP1
+U 1 1 5F41FDC2
+P 3900 3200
+F 0 "JP1" H 3900 3405 50  0000 C CNN
+F 1 "SolderJumper_3_Open" H 3900 3314 50  0000 C CNN
+F 2 "kicad-footprints:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 3900 3200 50  0001 C CNN
+F 3 "~" H 3900 3200 50  0001 C CNN
+	1    3900 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3900 3250 3900
+Wire Wire Line
+	3900 3350 3900 3900
+Wire Wire Line
+	4300 3200 4100 3200
+Wire Wire Line
+	3400 3200 3700 3200
+Text Label 3400 3200 0    50   ~ 0
+H-SYNC
+Text Label 4300 3200 0    50   ~ 0
+V-SYNC
+Wire Wire Line
+	3350 3700 3250 3700
+Wire Wire Line
+	3350 3800 3250 3800
+Wire Wire Line
+	3350 4000 3250 4000
+Text Label 3350 3700 0    50   ~ 0
+MOSI
+Text Label 3350 3800 0    50   ~ 0
+MISO
+Text Label 3350 4000 0    50   ~ 0
+SCK
+Text Label 3350 4200 0    50   ~ 0
+RST
+$Comp
+L power:GND #PWR05
+U 1 1 5F45CB3B
+P 2650 4700
+F 0 "#PWR05" H 2650 4450 50  0001 C CNN
+F 1 "GND" H 2655 4527 50  0000 C CNN
+F 2 "" H 2650 4700 50  0001 C CNN
+F 3 "" H 2650 4700 50  0001 C CNN
+	1    2650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 5F45E015
+P 2650 3250
+F 0 "#PWR04" H 2650 3100 50  0001 C CNN
+F 1 "+5V" H 2665 3423 50  0000 C CNN
+F 2 "" H 2650 3250 50  0001 C CNN
+F 3 "" H 2650 3250 50  0001 C CNN
+	1    2650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4600 2650 4650
+Wire Wire Line
+	2650 3250 2650 3400
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 5F45FFC5
+P 3950 4200
+F 0 "J2" H 3922 4174 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 3922 4083 50  0000 R CNN
+F 2 "kicad-footprints:PinHeader_1x02_P1.27mm_Vertical" H 3950 4200 50  0001 C CNN
+F 3 "~" H 3950 4200 50  0001 C CNN
+	1    3950 4200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4650 3750 4300
+Connection ~ 2650 4650
+Wire Wire Line
+	2650 4650 2650 4700
+$Comp
+L power:GND #PWR03
+U 1 1 5F46C4AF
+P 2600 6650
+F 0 "#PWR03" H 2600 6400 50  0001 C CNN
+F 1 "GND" H 2605 6477 50  0000 C CNN
+F 2 "" H 2600 6650 50  0001 C CNN
+F 3 "" H 2600 6650 50  0001 C CNN
+	1    2600 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR02
+U 1 1 5F46D29B
+P 2600 5450
+F 0 "#PWR02" H 2600 5300 50  0001 C CNN
+F 1 "+5V" H 2615 5623 50  0000 C CNN
+F 2 "" H 2600 5450 50  0001 C CNN
+F 3 "" H 2600 5450 50  0001 C CNN
+	1    2600 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 5450 2600 5600
+$Comp
+L mk6-eagle-import:AUDIO-JACK3 U2
+U 1 1 5F478DD6
+P 5850 5050
+F 0 "U2" H 5833 5452 59  0000 C CNN
+F 1 "AUDIO-JACK3" H 5900 5350 59  0000 C CNN
+F 2 "libs:Tayda_3.5mm_stereo_TRS_jack_A-853" H 5850 5050 50  0001 C CNN
+F 3 "" H 5850 5050 50  0001 C CNN
+	1    5850 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L mk6-eagle-import:78LF IC?
+U 1 1 5F47D0CF
+P 2700 1250
+AR Path="/5F47D0CF" Ref="IC?"  Part="1" 
+AR Path="/5F40DF0D/5F47D0CF" Ref="IC1"  Part="1" 
+F 0 "IC1" H 2750 1536 59  0000 C CNN
+F 1 "78L05F" H 2750 1431 59  0000 C CNN
+F 2 "kicad-footprints:SOT-89-3_Handsoldering" H 2700 1250 50  0001 C CNN
+F 3 "" H 2700 1250 50  0001 C CNN
+	1    2700 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6100 3100 6100
+Wire Wire Line
+	3200 6000 3100 6000
+Wire Wire Line
+	3200 5900 3100 5900
+Wire Wire Line
+	3200 6200 3100 6200
+Text Label 3200 6000 0    50   ~ 0
+MOSI
+Text Label 3200 5900 0    50   ~ 0
+MISO
+Text Label 3200 6200 0    50   ~ 0
+RST
+Text Label 3200 6100 0    50   ~ 0
+SCK
+Wire Wire Line
+	3350 4200 3250 4200
+Wire Notes Line
+	1250 7100 4700 7100
+Wire Notes Line
+	4700 4950 1250 4950
+Wire Notes Line
+	4700 2500 1250 2500
+Text Notes 1400 5100 0    50   ~ 0
+ATTINY programing interface
+Text Notes 1450 2650 0    50   ~ 0
+ATTINY procesor switcher
+Wire Notes Line
+	1250 800  1250 7100
+Wire Notes Line
+	4700 800  4700 7100
+$Comp
+L power:GND #PWR06
+U 1 1 5F49EF7F
+P 2700 1800
+F 0 "#PWR06" H 2700 1550 50  0001 C CNN
+F 1 "GND" H 2705 1627 50  0000 C CNN
+F 2 "" H 2700 1800 50  0001 C CNN
+F 3 "" H 2700 1800 50  0001 C CNN
+	1    2700 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 5F4A04A4
+P 3300 1150
+F 0 "#PWR07" H 3300 1000 50  0001 C CNN
+F 1 "+5V" H 3315 1323 50  0000 C CNN
+F 2 "" H 3300 1150 50  0001 C CNN
+F 3 "" H 3300 1150 50  0001 C CNN
+	1    3300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR01
+U 1 1 5F4A1216
+P 2200 1150
+F 0 "#PWR01" H 2200 1000 50  0001 C CNN
+F 1 "VCC" H 2215 1323 50  0000 C CNN
+F 2 "" H 2200 1150 50  0001 C CNN
+F 3 "" H 2200 1150 50  0001 C CNN
+	1    2200 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 1250 2400 1250
+Wire Wire Line
+	3100 1250 3300 1250
+Wire Wire Line
+	2800 1550 2800 1650
+Wire Wire Line
+	2800 1650 2700 1650
+Wire Wire Line
+	2700 1650 2700 1550
+Wire Wire Line
+	2700 1650 2700 1800
+Connection ~ 2700 1650
+Text Notes 1400 950  0    50   ~ 0
+power
+$Comp
+L Device:R_POT RV1
+U 1 1 5F4B01D3
+P 5650 4000
+F 0 "RV1" H 5400 4250 50  0000 R CNN
+F 1 "DB-1001N" H 5550 4150 50  0000 R CNN
+F 2 "libs:THUMB_POT" H 5650 4000 50  0001 C CNN
+F 3 "~" H 5650 4000 50  0001 C CNN
+	1    5650 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 5F4B2F35
+P 5650 4250
+F 0 "#PWR08" H 5650 4000 50  0001 C CNN
+F 1 "GND" H 5655 4077 50  0000 C CNN
+F 2 "" H 5650 4250 50  0001 C CNN
+F 3 "" H 5650 4250 50  0001 C CNN
+	1    5650 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4150 5650 4250
+Wire Wire Line
+	5900 4000 5800 4000
+Wire Wire Line
+	5650 3750 5650 3850
+Text Label 5650 3750 0    50   ~ 0
+AAUDIO
+Text Label 5900 4000 0    50   ~ 0
+AUDIOPOT
+Text Label 6250 5050 0    50   ~ 0
+AUDIOPOT
+Wire Wire Line
+	6250 5050 6050 5050
+Wire Wire Line
+	6050 5050 6050 4950
+Wire Wire Line
+	6050 5050 6050 5150
+Connection ~ 6050 5050
+Wire Wire Line
+	6250 4850 6050 4850
+Text Label 6250 4850 0    50   ~ 0
+AVIDEO
+$Comp
+L power:GND #PWR010
+U 1 1 5F4B966F
+P 6250 5350
+F 0 "#PWR010" H 6250 5100 50  0001 C CNN
+F 1 "GND" H 6255 5177 50  0000 C CNN
+F 2 "" H 6250 5350 50  0001 C CNN
+F 3 "" H 6250 5350 50  0001 C CNN
+	1    6250 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6250 5350 6250 5250
+Wire Wire Line
+	6250 5250 6050 5250
+Wire Notes Line
+	6750 5950 6750 3350
+Text Notes 4850 3500 0    50   ~ 0
+sound
+$Comp
+L mk6-eagle-import:V330SO16L U3
+U 1 1 5F4C3820
+P 7350 2200
+F 0 "U3" H 7350 2900 50  0000 C CNN
+F 1 "TS5V330" H 7350 2800 50  0000 C CNN
+F 2 "kicad-footprints:SOIC-16_4.55x10.3mm_P1.27mm" H 7350 2200 50  0001 C CNN
+F 3 "" H 7350 2200 50  0001 C CNN
+	1    7350 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L mk6-eagle-import:TRIMPOTTC33X TM1
+U 1 1 5F4C4ABC
+P 5450 1450
+F 0 "TM1" V 5200 1450 59  0000 C CNN
+F 1 "100R" V 5300 1450 59  0000 C CNN
+F 2 "kicad-footprints:Potentiometer_Bourns_TC33X_Vertical" H 5450 1450 50  0001 C CNN
+F 3 "" H 5450 1450 50  0001 C CNN
+	1    5450 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L mk6-eagle-import:TRIMPOTTC33X TM2
+U 1 1 5F4C6BAC
+P 5450 2050
+F 0 "TM2" V 5200 2050 59  0000 C CNN
+F 1 "100R" V 5300 2050 59  0000 C CNN
+F 2 "kicad-footprints:Potentiometer_Bourns_TC33X_Vertical" H 5450 2050 50  0001 C CNN
+F 3 "" H 5450 2050 50  0001 C CNN
+	1    5450 2050
+	0    1    1    0   
+$EndComp
+$Comp
+L mk6-eagle-import:TRIMPOTTC33X TM3
+U 1 1 5F4C74CB
+P 8700 2200
+F 0 "TM3" V 8394 2200 59  0000 C CNN
+F 1 "100R" V 8499 2200 59  0000 C CNN
+F 2 "kicad-footprints:Potentiometer_Bourns_TC33X_Vertical" H 8700 2200 50  0001 C CNN
+F 3 "" H 8700 2200 50  0001 C CNN
+	1    8700 2200
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+5V #PWR013
+U 1 1 5F4CBD6D
+P 8050 1550
+F 0 "#PWR013" H 8050 1400 50  0001 C CNN
+F 1 "+5V" H 8065 1723 50  0000 C CNN
+F 2 "" H 8050 1550 50  0001 C CNN
+F 3 "" H 8050 1550 50  0001 C CNN
+	1    8050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 1550 8050 1800
+Wire Wire Line
+	8050 1800 7850 1800
+Wire Wire Line
+	7850 1900 8050 1900
+Wire Wire Line
+	8050 1900 8050 2000
+Wire Wire Line
+	7850 2200 8050 2200
+Connection ~ 8050 2200
+Wire Wire Line
+	8050 2200 8450 2200
+Wire Wire Line
+	8050 2100 7850 2100
+Connection ~ 8050 2100
+Wire Wire Line
+	8050 2100 8050 2200
+Wire Wire Line
+	8050 2000 7850 2000
+Connection ~ 8050 2000
+Wire Wire Line
+	8050 2000 8050 2100
+$Comp
+L power:GND #PWR014
+U 1 1 5F4D4481
+P 8450 2250
+F 0 "#PWR014" H 8450 2000 50  0001 C CNN
+F 1 "GND" H 8455 2077 50  0000 C CNN
+F 2 "" H 8450 2250 50  0001 C CNN
+F 3 "" H 8450 2250 50  0001 C CNN
+	1    8450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 2250 8450 2200
+Connection ~ 8450 2200
+Wire Wire Line
+	8450 2200 8500 2200
+Wire Wire Line
+	7850 2400 8300 2400
+Wire Wire Line
+	8300 2400 8300 2500
+Wire Wire Line
+	8300 2500 8700 2500
+Wire Wire Line
+	8700 2500 8700 2400
+Wire Wire Line
+	7900 2300 7850 2300
+Wire Wire Line
+	7900 2500 7850 2500
+Text Label 7900 2500 0    50   ~ 0
+VBLUE
+Text Label 7900 2300 0    50   ~ 0
+MONOSIGNAL
+Wire Wire Line
+	9050 2200 8900 2200
+Text Label 9050 2200 0    50   ~ 0
+ABLUE
+Wire Wire Line
+	6350 1800 6850 1800
+Wire Wire Line
+	6350 1900 6850 1900
+Wire Wire Line
+	6350 2100 6850 2100
+Wire Wire Line
+	6350 2200 6850 2200
+Wire Wire Line
+	6350 2400 6850 2400
+Wire Wire Line
+	5850 2500 6850 2500
+$Comp
+L power:GND #PWR09
+U 1 1 5F4F8839
+P 5850 2600
+F 0 "#PWR09" H 5850 2350 50  0001 C CNN
+F 1 "GND" H 5855 2427 50  0000 C CNN
+F 2 "" H 5850 2600 50  0001 C CNN
+F 3 "" H 5850 2600 50  0001 C CNN
+	1    5850 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 2500 5850 2600
+Wire Wire Line
+	4900 1450 5250 1450
+Wire Wire Line
+	4900 2050 5250 2050
+Text Label 4900 1450 0    50   ~ 0
+ARED
+Text Label 4900 2050 0    50   ~ 0
+AGREEN
+Wire Wire Line
+	5450 1650 5450 1700
+Wire Wire Line
+	6150 2000 6850 2000
+Wire Wire Line
+	6150 2000 6150 1700
+Wire Wire Line
+	6150 1700 5450 1700
+Wire Wire Line
+	5450 2300 5450 2250
+Wire Wire Line
+	5450 2300 6850 2300
+Wire Wire Line
+	5650 1450 5850 1450
+Wire Wire Line
+	5850 1450 5850 2050
+Connection ~ 5850 2500
+Wire Wire Line
+	5850 2050 5650 2050
+Connection ~ 5850 2050
+Wire Wire Line
+	5850 2050 5850 2500
+Text Label 6350 2400 0    50   ~ 0
+VGREEN
+Text Label 6350 2200 0    50   ~ 0
+MONOSIGNAL
+Text Label 6350 1900 0    50   ~ 0
+MONOSIGNAL
+Text Label 6350 1800 0    50   ~ 0
+SELECT
+Text Label 6350 2100 0    50   ~ 0
+VRED
+Wire Notes Line
+	9450 800  9450 3350
+Wire Notes Line
+	1250 800  9450 800 
+Text Notes 4850 950  0    50   ~ 0
+multiplexer
+Wire Notes Line
+	11050 3350 11050 5950
+Wire Notes Line
+	4750 5950 11050 5950
+Wire Notes Line
+	4700 3350 11050 3350
+Wire Notes Line
+	8800 3350 8800 5950
+Text Notes 8950 3500 0    50   ~ 0
+VGA output
+Text Notes 6900 3500 0    50   ~ 0
+ATARI input
+Wire Wire Line
+	7150 4100 7750 4100
+Wire Wire Line
+	7150 4200 7750 4200
+Text Label 7150 4100 0    50   ~ 0
+AAUDIO
+Text Label 7150 4200 0    50   ~ 0
+AVIDEO
+Text Label 7150 4400 0    50   ~ 0
+SELECT
+Wire Wire Line
+	7150 4400 7750 4400
+NoConn ~ 7750 4300
+NoConn ~ 7750 4500
+NoConn ~ 10400 4300
+NoConn ~ 10400 4800
+NoConn ~ 10400 5400
+NoConn ~ 10400 5100
+NoConn ~ 10400 5000
+$Comp
+L power:GND #PWR012
+U 1 1 5F59A14E
+P 7600 5400
+F 0 "#PWR012" H 7600 5150 50  0001 C CNN
+F 1 "GND" H 7605 5227 50  0000 C CNN
+F 2 "" H 7600 5400 50  0001 C CNN
+F 3 "" H 7600 5400 50  0001 C CNN
+	1    7600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10400 4400 10250 4400
+Wire Wire Line
+	10250 4400 10250 4500
+Wire Wire Line
+	10250 4900 10400 4900
+Wire Wire Line
+	10250 4500 10400 4500
+Connection ~ 10250 4500
+Wire Wire Line
+	10250 4500 10250 4600
+Wire Wire Line
+	10250 4600 10400 4600
+Connection ~ 10250 4600
+Wire Wire Line
+	10250 4600 10250 4700
+Wire Wire Line
+	10250 4700 10400 4700
+Connection ~ 10250 4700
+Wire Wire Line
+	10250 4700 10250 4900
+$Comp
+L power:GND #PWR015
+U 1 1 5F5A4FCA
+P 10250 4900
+F 0 "#PWR015" H 10250 4650 50  0001 C CNN
+F 1 "GND" H 10255 4727 50  0000 C CNN
+F 2 "" H 10250 4900 50  0001 C CNN
+F 3 "" H 10250 4900 50  0001 C CNN
+	1    10250 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 10250 4900
+Wire Wire Line
+	9800 5200 10400 5200
+Wire Wire Line
+	9800 5300 10400 5300
+Wire Wire Line
+	9750 4000 10400 4000
+Wire Wire Line
+	9750 4100 10400 4100
+Wire Wire Line
+	9750 4200 10400 4200
+Text Label 9800 5300 0    50   ~ 0
+V-SYNC
+Text Label 9800 5200 0    50   ~ 0
+H-SYNC
+Text Label 9750 4000 0    50   ~ 0
+VRED
+Text Label 9750 4100 0    50   ~ 0
+VGREEN
+Text Label 9750 4200 0    50   ~ 0
+VBLUE
+Wire Wire Line
+	7150 4600 7750 4600
+Wire Wire Line
+	7150 4700 7750 4700
+$Comp
+L power:VCC #PWR011
+U 1 1 5F5CE0BF
+P 7000 4650
+F 0 "#PWR011" H 7000 4500 50  0001 C CNN
+F 1 "VCC" H 7015 4823 50  0000 C CNN
+F 2 "" H 7000 4650 50  0001 C CNN
+F 3 "" H 7000 4650 50  0001 C CNN
+	1    7000 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 4650 7000 4800
+Text Label 7150 4900 0    50   ~ 0
+H-SYNC
+Text Label 7150 5200 0    50   ~ 0
+V-SYNC
+Text Label 7150 5100 0    50   ~ 0
+MONOSIGNAL
+Text Label 7150 5000 0    50   ~ 0
+ABLUE
+Text Label 7150 4700 0    50   ~ 0
+ARED
+Text Label 7150 4600 0    50   ~ 0
+AGREEN
+Wire Wire Line
+	7150 4900 7750 4900
+Wire Wire Line
+	7750 5000 7150 5000
+Wire Wire Line
+	7150 5100 7750 5100
+Wire Wire Line
+	7750 5200 7150 5200
+Wire Wire Line
+	7600 5300 7600 5400
+Wire Wire Line
+	2200 1150 2200 1250
+Wire Wire Line
+	3300 1150 3300 1250
+Wire Wire Line
+	7000 4800 7750 4800
+Wire Wire Line
+	7600 5300 7750 5300
+Wire Wire Line
+	2600 6500 2600 6650
+Text Label 6050 5250 0    50   ~ 0
+GND
+Text Label 8150 2200 0    50   ~ 0
+GND
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5F4A9FFE
+P 3600 4400
+F 0 "SW1" V 3550 4200 50  0000 L CNN
+F 1 "Elec K2-1823SA-A4DW-06" V 3950 4150 50  0000 L CNN
+F 2 "libs:K2-1823SA" H 3600 4400 50  0001 C CNN
+F 3 "~" H 3600 4400 50  0001 C CNN
+	1    3600 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4650 3600 4650
+Wire Wire Line
+	3750 4100 3750 4200
+Wire Wire Line
+	3250 4100 3600 4100
+Wire Wire Line
+	3600 4200 3600 4100
+Connection ~ 3600 4100
+Wire Wire Line
+	3600 4100 3750 4100
+Wire Wire Line
+	3600 4600 3600 4650
+Connection ~ 3600 4650
+Wire Wire Line
+	3600 4650 3750 4650
 $EndSCHEMATC

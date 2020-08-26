@@ -1,0 +1,8 @@
+(sym_lib_table
+  (lib (name Regulator_Current)(type Legacy)(uri /home/palo/KicadLibraries/Official/kicad-symbols/Regulator_Current.lib)(options "")(descr ""))
+  (lib (name Connector)(type Legacy)(uri /home/palo/KicadLibraries/Official/kicad-symbols/Connector.lib)(options "")(descr ""))
+  (lib (name Jumper)(type Legacy)(uri /home/palo/KicadLibraries/Official/kicad-symbols/Jumper.lib)(options "")(descr ""))
+  (lib (name mk6-eagle-import)(type Legacy)(uri ${KIPRJMOD}/library/mk6-eagle-import.lib)(options "")(descr ""))
+  (lib (name SparkFun-Aesthetics)(type Legacy)(uri ${KICAD_SPARKFUN_SYMBOL}/Libraries/SparkFun-Aesthetics.lib)(options "")(descr ""))
+  (lib (name atari_mods-rescue)(type Legacy)(uri ${KIPRJMOD}/atari_mods-rescue.lib)(options "")(descr ""))
+)
