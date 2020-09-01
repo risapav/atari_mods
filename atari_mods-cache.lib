@@ -29,6 +29,29 @@ X GND 6 -100 -400 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
+# Connector_AudioJack3_Ground
+#
+DEF Connector_AudioJack3_Ground J 0 20 Y Y 1 F N
+F0 "J" 0 350 50 H V C CNN
+F1 "Connector_AudioJack3_Ground" 0 250 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Jack*
+$ENDFPLIST
+DRAW
+S -200 -100 -250 -200 0 1 10 F
+S 100 150 -200 -200 0 1 10 f
+P 4 0 1 10 0 -100 25 -125 50 -100 100 -100 N
+P 5 0 1 10 -75 -100 -50 -125 -25 -100 -25 0 100 0 N
+P 5 0 1 10 100 100 -100 100 -100 -100 -125 -125 -150 -100 N
+X ~ G 0 -300 100 U 50 50 1 1 P
+X ~ R 200 0 100 L 50 50 1 1 P
+X ~ S 200 100 100 L 50 50 1 1 P
+X ~ T 200 -100 100 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
 # Connector_Conn_01x02_Male
 #
 DEF Connector_Conn_01x02_Male J 0 40 Y N 1 F N
@@ -248,11 +271,11 @@ X B 2 200 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mk6-eagle-import_78LF
+# atari_mods-rescue_78LF-mk6-eagle-import
 #
-DEF mk6-eagle-import_78LF IC 0 40 Y Y 1 L N
+DEF atari_mods-rescue_78LF-mk6-eagle-import IC 0 40 Y Y 1 L N
 F0 "IC" -200 225 59 H V L BNN
-F1 "mk6-eagle-import_78LF" -200 125 59 H V L BNN
+F1 "atari_mods-rescue_78LF-mk6-eagle-import" -200 125 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -268,37 +291,11 @@ X VI 3 -300 0 100 R 50 50 1 0 I
 ENDDRAW
 ENDDEF
 #
-# mk6-eagle-import_AUDIO-JACK3
+# atari_mods-rescue_TRIMPOTTC33X-mk6-eagle-import
 #
-DEF mk6-eagle-import_AUDIO-JACK3 ~ 0 40 Y Y 1 L N
-F0 "" -200 220 59 H V L BNN
-F1 "mk6-eagle-import_AUDIO-JACK3" -200 -300 59 H V L BNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-S -250 -200 -200 200 1 0 0 F
-P 2 1 0 0 -150 -200 -100 -150 N
-P 2 1 0 0 -100 -150 -50 -200 N
-P 2 1 0 0 -50 -200 100 -200 N
-P 2 1 0 0 -50 -100 0 -50 N
-P 2 1 0 0 -50 50 -100 100 N
-P 2 1 0 0 0 -50 50 -100 N
-P 2 1 0 0 0 100 -50 50 N
-P 2 1 0 0 50 -100 100 -100 N
-P 2 1 0 0 100 100 0 100 N
-P 2 1 0 0 100 200 -200 200 N
-X EARTH EARTH 200 200 100 L 0 0 1 0 B
-X RING1 RING1 200 100 100 L 0 0 1 0 B
-X RING2 RING2 200 -200 100 L 0 0 1 0 W
-X TIP TIP 200 -100 100 L 0 0 1 0 B
-ENDDRAW
-ENDDEF
-#
-# mk6-eagle-import_TRIMPOTTC33X
-#
-DEF mk6-eagle-import_TRIMPOTTC33X TM 0 40 Y Y 1 L N
+DEF atari_mods-rescue_TRIMPOTTC33X-mk6-eagle-import TM 0 40 Y Y 1 L N
 F0 "TM" -235 -150 59 V V L BNN
-F1 "mk6-eagle-import_TRIMPOTTC33X" -150 -150 59 V V L BNN
+F1 "atari_mods-rescue_TRIMPOTTC33X-mk6-eagle-import" -150 -150 59 V V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -318,11 +315,11 @@ X E 3 0 200 100 D 50 0 1 0 P
 ENDDRAW
 ENDDEF
 #
-# mk6-eagle-import_V330SO16L
+# atari_mods-rescue_V330SO16L-mk6-eagle-import
 #
-DEF mk6-eagle-import_V330SO16L ~ 0 40 Y Y 1 L N
+DEF atari_mods-rescue_V330SO16L-mk6-eagle-import ~ 0 40 Y Y 1 L N
 F0 "" 0 0 50 H I C CNN
-F1 "mk6-eagle-import_V330SO16L" 0 0 50 H I C CNN
+F1 "atari_mods-rescue_V330SO16L-mk6-eagle-import" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

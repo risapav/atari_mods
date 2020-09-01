@@ -163,18 +163,7 @@ $EndComp
 Wire Wire Line
 	2600 5450 2600 5600
 $Comp
-L mk6-eagle-import:AUDIO-JACK3 U2
-U 1 1 5F478DD6
-P 5850 5050
-F 0 "U2" H 5833 5452 59  0000 C CNN
-F 1 "AUDIO-JACK3" H 5900 5350 59  0000 C CNN
-F 2 "libs:Tayda_3.5mm_stereo_TRS_jack_A-853" H 5850 5050 50  0001 C CNN
-F 3 "" H 5850 5050 50  0001 C CNN
-	1    5850 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L mk6-eagle-import:78LF IC?
+L atari_mods-rescue:78LF-mk6-eagle-import IC?
 U 1 1 5F47D0CF
 P 2700 1250
 AR Path="/5F47D0CF" Ref="IC?"  Part="1" 
@@ -300,38 +289,23 @@ Text Label 5900 4000 0    50   ~ 0
 AUDIOPOT
 Text Label 6250 5050 0    50   ~ 0
 AUDIOPOT
-Wire Wire Line
-	6250 5050 6050 5050
-Wire Wire Line
-	6050 5050 6050 4950
-Wire Wire Line
-	6050 5050 6050 5150
-Connection ~ 6050 5050
-Wire Wire Line
-	6250 4850 6050 4850
-Text Label 6250 4850 0    50   ~ 0
-AVIDEO
 $Comp
 L power:GND #PWR010
 U 1 1 5F4B966F
-P 6250 5350
-F 0 "#PWR010" H 6250 5100 50  0001 C CNN
-F 1 "GND" H 6255 5177 50  0000 C CNN
-F 2 "" H 6250 5350 50  0001 C CNN
-F 3 "" H 6250 5350 50  0001 C CNN
-	1    6250 5350
+P 6150 5350
+F 0 "#PWR010" H 6150 5100 50  0001 C CNN
+F 1 "GND" H 6155 5177 50  0000 C CNN
+F 2 "" H 6150 5350 50  0001 C CNN
+F 3 "" H 6150 5350 50  0001 C CNN
+	1    6150 5350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6250 5350 6250 5250
-Wire Wire Line
-	6250 5250 6050 5250
 Wire Notes Line
 	6750 5950 6750 3350
 Text Notes 4850 3500 0    50   ~ 0
 sound
 $Comp
-L mk6-eagle-import:V330SO16L U3
+L atari_mods-rescue:V330SO16L-mk6-eagle-import U3
 U 1 1 5F4C3820
 P 7350 2200
 F 0 "U3" H 7350 2900 50  0000 C CNN
@@ -342,7 +316,7 @@ F 3 "" H 7350 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mk6-eagle-import:TRIMPOTTC33X TM1
+L atari_mods-rescue:TRIMPOTTC33X-mk6-eagle-import TM1
 U 1 1 5F4C4ABC
 P 5450 1450
 F 0 "TM1" V 5200 1450 59  0000 C CNN
@@ -353,7 +327,7 @@ F 3 "" H 5450 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L mk6-eagle-import:TRIMPOTTC33X TM2
+L atari_mods-rescue:TRIMPOTTC33X-mk6-eagle-import TM2
 U 1 1 5F4C6BAC
 P 5450 2050
 F 0 "TM2" V 5200 2050 59  0000 C CNN
@@ -364,7 +338,7 @@ F 3 "" H 5450 2050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L mk6-eagle-import:TRIMPOTTC33X TM3
+L atari_mods-rescue:TRIMPOTTC33X-mk6-eagle-import TM3
 U 1 1 5F4C74CB
 P 8700 2200
 F 0 "TM3" V 8394 2200 59  0000 C CNN
@@ -659,7 +633,7 @@ Wire Wire Line
 	7600 5300 7750 5300
 Wire Wire Line
 	2600 6500 2600 6650
-Text Label 6050 5250 0    50   ~ 0
+Text Label 6150 5250 0    50   ~ 0
 GND
 Text Label 8150 2200 0    50   ~ 0
 GND
@@ -690,4 +664,28 @@ Wire Wire Line
 Connection ~ 3600 4650
 Wire Wire Line
 	3600 4650 3750 4650
+$Comp
+L Connector:AudioJack3_Ground J5
+U 1 1 5F49E77A
+P 5700 5050
+F 0 "J5" H 5682 5375 50  0000 C CNN
+F 1 "AudioJack3_Ground" H 5682 5284 50  0000 C CNN
+F 2 "kicad-footprints:Jack_3.5mm_Switronic_ST-005-G_horizontal" H 5700 5050 50  0001 C CNN
+F 3 "~" H 5700 5050 50  0001 C CNN
+	1    5700 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5900 5150 6000 5150
+Wire Wire Line
+	6000 5150 6000 5050
+Wire Wire Line
+	6000 5050 6250 5050
+Wire Wire Line
+	6000 5050 5900 5050
+Connection ~ 6000 5050
+Wire Wire Line
+	6150 4950 5900 4950
+Wire Wire Line
+	6150 4950 6150 5350
 $EndSCHEMATC
